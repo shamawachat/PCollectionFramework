@@ -1,7 +1,9 @@
 package cf.list;
 
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.ListIterator;
 import java.util.Vector;
 
 public class ArrayListEx 
@@ -63,8 +65,27 @@ public class ArrayListEx
 		Iterator itr=ar.iterator();
 		while(itr.hasNext())
 		{
-			System.out.print(itr.next());
+			System.out.print(itr.next()+" ");
 		}
 		System.out.println("------------------------------------");
+		
+		System.out.println("Using List-Iterator:");
+		ListIterator litr=ar.listIterator();
+		while(litr.hasNext())
+		{
+			System.out.print(litr.next()+" ");
+		}
+		System.out.println("------------------------------------");
+		
+		System.out.println("Using Enumeration:");
+		Vector v=new Vector(ar);
+		System.out.println("Elements are: "+v);
+		Enumeration en=v.elements();
+		while(en.hasMoreElements())
+		{
+			System.out.print(" "+en.nextElement());
+		}
+		System.out.println();
+		System.out.println("---------------------------------------");
 	}
 }
