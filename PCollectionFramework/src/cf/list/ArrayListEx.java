@@ -21,9 +21,41 @@ public class ArrayListEx
 		ar.add("Bit2");
 		ar.add("Yeotmal");
 		
-		System.out.println("Array Elements:\n"+ar);
+		System.out.println("ArrayList Elements:\n"+ar);
 //		System.out.println("Capacity:\n"+ar.capacity());
 		System.out.println("Size:\n"+ar.size());
 		System.out.println("======================================");
+		
+		System.out.println("Using for-loop:");
+		for(int i=0;i<ar.size();i++)
+		{
+			System.out.print(ar.get(i)+" | ");
+		}
+		System.out.println("--------------------------------------");
+		
+		System.out.println("Using for-each-loop:");
+		for(Object ob:ar)
+		{
+			System.out.print(ob+" ");
+		}
+		System.out.println("--------------------------------------");
+		
+		ar.set(0, "Sham");
+		System.out.println("Updated ArrayList: "+ar);
+		
+		ar.remove(3);
+		System.out.println("Updated ArrayList: "+ar);
+		
+		boolean res=ar.contains("Sham");
+		System.out.println("True/False: "+res);
+		
+		int ind=ar.indexOf("Sham Awachat");
+		System.out.println("Index: "+ind);
+		
+		ar.add("Sham");
+		System.out.println("Updated ArrayList: "+ar);
+		
+		ind=ar.lastIndexOf("Sham");
+		System.out.println("Index: "+ind);
 	}
 }
