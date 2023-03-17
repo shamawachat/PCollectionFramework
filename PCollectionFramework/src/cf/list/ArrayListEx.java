@@ -1,5 +1,6 @@
 package cf.list;
 
-public class ArrayListEx {
+public class ArrayListEx 
+{
 
 }
