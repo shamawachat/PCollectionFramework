@@ -61,5 +61,10 @@ public class ArrayListEx
 		
 		System.out.println("Using Iterator:");
 		Iterator itr=ar.iterator();
+		while(itr.hasNext())
+		{
+			System.out.print(itr.next());
+		}
+		System.out.println("------------------------------------");
 	}
 }
