@@ -1,6 +1,7 @@
 package cf.list;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Vector;
 
 public class ArrayListEx 
@@ -57,5 +58,8 @@ public class ArrayListEx
 		
 		ind=ar.lastIndexOf("Sham");
 		System.out.println("Index: "+ind);
+		
+		System.out.println("Using Iterator:");
+		Iterator itr=ar.iterator();
 	}
 }
